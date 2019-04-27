@@ -9,6 +9,7 @@
 	<title>My Awesome Website About Australia</title>
 	<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
 	<meta name="author" content=""/>
+	
 	<!-- Bootstrap -->
 	<script src="js/modernizr.custom.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,7 @@
 			<div class="container">
 				<div class="row nav-wrapper">
 					<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-						<a href="#"><img height="60" src="img/logo.png" alt="my logo"></a>
+						<img class="logo" height="60" src="img/logo.png" alt="logo" data-toggle="tooltip" data-placement="right" title="Вернуться в Портфолио">
 					</div>
 					<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
 						<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle"
@@ -49,7 +50,7 @@
 	</header>
 	<section class="video" id="about">
 		<div class="container">
-			<a href="my-video.html">
+			<a href="video.html">
 				<h1 class="heading-video">Watch the grand tour!</h1>
 			</a>
 		</div>
@@ -61,7 +62,7 @@
 					<div class="features-bg">
 						<div class="texture-overlay"></div>
 						<div class="features-img wp1">
-							<img height="60" src="img/logo.png" alt="logo">
+							<img class="logo" height="60" src="img/logo.png" alt="logo" data-toggle="tooltip" data-placement="right" title="Вернуться в Портфолио">
 						</div>
 					</div>
 				</div>
@@ -165,17 +166,17 @@
 							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum
 								consequat ut sed sem. Duis quis tempor nunc."</p>
 							<div class="logo-quote">
-								<a href="#"><img height="60" src="img/logo.png" alt="my logo"></a>
+								<a href="#"><img class="logo" height="60" src="img/logo.png" alt="logo" data-toggle="tooltip" data-placement="right" title="Вернуться в Портфолио"></a>
 							</div>
 						</blockquote>
-						<a href="#screenshots" class="download-btn">Let's go!<i class="fa fa-download"></i></a>
+						<a href="#photos" class="download-btn">Get Photos!<i class="fa fa-download"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="screenshots-intro">
+	<section class="photos-intro">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -183,13 +184,12 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum
 						consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in
 						faucibus.</p>
-					<p><a href="#screenshots" class="arrow-btn">See the photos! <i
-								class="fa fa-long-arrow-right"></i></a></p>
+					<p><a href="#photos" class="read-more-btn">See the photos!<i class="fa fa-chevron-circle-right"></i></a></p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="screenshots" id="screenshots">
+	<section class="photos" id="photos">
 		<div class="container-fluid">
 			<div class="row">
 				<ul class="grid">
@@ -310,15 +310,17 @@
 			<div class="row">
 				<div class="col-md-5">
 					<h1 class="footer-logo">
-						<img height="60" src="img/logo.png" alt="logo">
+						<img class="logo" height="60" src="img/logo.png" alt="logo" data-toggle="tooltip" data-placement="right" title="Вернуться в Портфолио">
 					</h1>
 					<p><a href="#"><em>Lorem ipsum dolor sit.</em></a></p>
 				</div>
-				<div class="col-md-7">
+				<div class="col-md-12">
 					<ul class="footer-nav">
 						<li><a href="#about">About</a></li>
 						<li><a href="#features">Features</a></li>
-						<li><a href="#screenshots">Photos</a></li>
+						<li><a href="#photos">Photos</a></li>
+						<li><a href="video.html">Video Tour</a></li>
+						<li><a href="#">Вернуться в Портфолио</a></li>
 					</ul>
 				</div>
 			</div>
@@ -329,7 +331,8 @@
 			<ul>
 				<li class="overlay-elem"><a href="#about"><i class="fa fa-heart"></i>About</a></li>
 				<li class="overlay-elem"><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
-				<li class="overlay-elem"><a href="#screenshots"><i class="fa fa-desktop"></i>Photos</a></li>
+				<li class="overlay-elem"><a href="#photos"><i class="fa fa-desktop"></i>Photos</a></li>
+				<li class="overlay-elem"><a href="video.html"><i class="fa fa-video"></i>Video Tour</a></li>
 				<li class="overlay-elem"><a href="#"><i class="fas fa-female"></i>Вернуться <br>в Портфолио</a></li>
 			</ul>
 		</nav>
@@ -339,11 +342,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/flickity.pkgd.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- tooltip -->
+	
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/retina.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/min/scripts-min.js"></script>
+	
 </body>
 
 </html></html>
