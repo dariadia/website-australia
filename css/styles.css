@@ -276,6 +276,23 @@ figure {
     margin: 0
 }
 
+.aligner {
+    text-align: center;
+}
+
+.padder-bt {
+    padding-bottom: 40px;
+}
+
+.padder-tp {
+    padding-top: 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* ==========================================================================
 Forms
 ========================================================================== */
@@ -631,6 +648,24 @@ header i {
     margin-left: 5px
 }
 
+.flex:hover .fa-leaf-first {
+    color: palevioletred;
+    transition: 0.3s color;
+}
+
+.flex:hover .fa-leaf-second {
+    color: palevioletred;
+    transition: 1s color;
+}
+
+.flex:hover .fa-leaf-second-third {
+    color: palevioletred;
+    transition: 2.1s color;
+}
+
+.spacer {
+    margin: 50px;
+}
 /* ==========================================================================
 Video
 ========================================================================== */
@@ -794,6 +829,12 @@ Features List
     width: 65%;
 }
 
+.feature-content-ext {
+    display: inline-block;
+    margin-left: 0;
+    width: 85%;
+}
+
 .feature-icon {
     display: inline-block;
     margin-right: 25px;
@@ -907,6 +948,26 @@ Showcase
     bottom: 20px;
 }
 
+/* ==========================================================================
+facts Intro
+========================================================================== */
+
+.heading-facts {
+    padding: 22.5px;
+    text-align: center;
+    font-size: 40px;
+    color: inherit;
+    background-color: white;
+}
+
+.heading-facts:hover {
+    transition: 0.3s color;
+    color: palevioletred;
+}
+
+.icon-facts {
+    color: white;
+}
 /* ==========================================================================
 photos Intro
 ========================================================================== */
